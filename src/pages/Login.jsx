@@ -8,7 +8,9 @@ const Github =
   "https://raw.githubusercontent.com/safak/youtube/react-social-login/client/src/img/github.png";
 
 const Login = () => {
-  const BASE_URL = "https://oauth-social.herokuapp.com";
+  // const BASE_URL = "https://oauth-social.herokuapp.com";
+
+  const BASE_URL = "http://localhost:5000";
 
   const google = () => {
     window.open(`${BASE_URL}/auth/google`, "_self");
@@ -19,7 +21,7 @@ const Login = () => {
   };
 
   const facebook = () => {
-    window.open("http://localhost:5000/auth/facebok", "_self");
+    window.open(`${BASE_URL}/auth/facebok`, "_self");
   };
   return (
     <div className="login">
