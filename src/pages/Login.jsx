@@ -8,8 +8,10 @@ const Github =
   "https://raw.githubusercontent.com/safak/youtube/react-social-login/client/src/img/github.png";
 
 const Login = () => {
+  const BASE_URL = "https://oauth-social.herokuapp.com";
+
   const google = () => {
-    window.open("http://localhost:5000/auth/google", "_self");
+    window.open(`${BASE_URL}/auth/google`, "_self");
   };
 
   const github = () => {

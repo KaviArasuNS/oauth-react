@@ -9,9 +9,11 @@ import { Routes, Route, Link, Navigate } from "react-router-dom";
 function App() {
   const [user, setUser] = useState(null);
 
+  const BASE_URL = "https://oauth-social.herokuapp.com";
+
   useEffect(() => {
     const getUser = () => {
-      fetch("http://localhost:5000/auth/login/success", {
+      fetch(`${BASE_URL}/auth/login/success`, {
         method: "GET",
         credentials: "include",
         headers: {
