@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { BASE_URL } from "../data";
 
 const Navbar = ({ user }) => {
-  // const BASE_URL = "http://localhost:5000";
-
-  const BASE_URL = "https://oauth-social.herokuapp.com";
-
   const logout = () => {
     window.open(`${BASE_URL}/auth/logout`, "_self");
   };
